@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  php-apache-enviorment:
+    container_name: php-apache
+    image: php:8.2-apache
+    volumes:
+      - ./php/src:/var/www/html/
+    ports:
+      - 8000:80
+  db:
+    container_name: db
+    image: mysql
+    restart: always
+    environment:
+      MY_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'DockerDB'
+      MYSQL_USER: 'root'
+      MYSQL_PASSWORD: 'password'
+    ports:
+      - "9906:3306"

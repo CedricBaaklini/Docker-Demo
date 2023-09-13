@@ -1,0 +1,22 @@
+$mobyBlue: #1D63ED;
+$textBlue: #00084D;
+
+
+body {
+
+  font-family: "Helvetica Neue";
+
+  background-color: $mobyBlue;
+
+  color: $textBlue;
+
+  text-align: center;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
