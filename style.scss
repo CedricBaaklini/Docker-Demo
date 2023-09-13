@@ -4,7 +4,7 @@ $textBlue: #00084D;
 
 body {
 
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", sans-serif;
 
   background-color: $mobyBlue;
 
@@ -18,5 +18,9 @@ body {
 
   p {
     font-size: 24px;
+  }
+
+  table {
+
   }
 }

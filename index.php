@@ -14,6 +14,7 @@
         $host = 'localhost';
         $user = 'root';
         $pass = 'password';
+        $database = 'MyDB';
         
         $conn = new mysqli($host, $user, $pass);
         
@@ -22,6 +23,8 @@
         } else {
             echo "<p> Connected to MySQL server successfully! </p>";
         }
+        
+//        $sql = 'SELECT * FROM users';
 
         ?>
 
