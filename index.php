@@ -10,22 +10,16 @@
         <?php
 
         echo "<h1>Hello Docker!</h1>";
-        
+
         $host = 'localhost';
         $user = 'root';
         $pass = 'password';
         $database = 'MyDB';
-        
-        $conn = new mysqli($host, $user, $pass);
-        
-        if ($conn -> connect_error) {
-            die("Connection failed: " . $conn -> connect_error);
-        } else {
-            echo "<p> Connected to MySQL server successfully! </p>";
-        }
-        
-//        $sql = 'SELECT * FROM users';
 
+        $conn = new mysqli($host, $user, $pass, $database);
+        
+        $query = "SELECT * FROM 'Programming Languages'";
+        
         ?>
 
     </body>
