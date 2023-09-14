@@ -6,14 +6,25 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-        <form action = "">
-
-        </form>
+        <h1>Hello Docker!</h1>
+<!---->
+<!--        <form action = "insert.php" method="post">-->
+<!--            Language: <input type="text" name="Language" /><br><br>-->
+<!--            -->
+<!--            Type: <input type="radio" name="Static or Dynamic">-->
+<!--            <label> static </label>-->
+<!--            <input type="radio" name="Static or Dynamic">-->
+<!--            <label> dynamic </label><br><br>-->
+<!--            -->
+<!--            Runtime: <input type="radio" name="Compiled or Interpreted">-->
+<!--            <label> compiled </label>-->
+<!--            <input type="radio" name="Static or Dynamic">-->
+<!--            <label> interpreted </label><br><br>-->
+<!--            -->
+<!--            <input type="submit"/><br><br>-->
+<!--        </form>-->
 
         <?php
-
-        echo "<h1>Hello Docker!</h1>";
 
         $host = 'localhost';
         $user = 'root';
@@ -42,9 +53,9 @@
               </tr>';
             }
         }
-        
+
         $result->free();
-        
+
         ?>
 
     </body>
